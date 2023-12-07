@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Códigos</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subir Código</h1>
+        <form id="codeForm" enctype="multipart/form-data">
+            <label for="htmlFile">Archivo HTML:</label>
+            <input type="file" id="htmlFile" name="htmlFile" accept=".html">
+            
+            <label for="jsFile">Archivo JS:</label>
+            <input type="file" id="jsFile" name="jsFile" accept=".js">
+
+            <button type="button" onclick="uploadCode()">Subir Código</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
